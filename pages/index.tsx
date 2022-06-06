@@ -10,7 +10,7 @@ import Comments from '../components/comments/comments';
 
 const Main: NextPage = () => {
   return (
-    <div>
+    <div className='w-full min-w-[1920px] overflow-hidden'>
       <Head>
         <title>grmk</title>
         <meta name='description' content='' />
