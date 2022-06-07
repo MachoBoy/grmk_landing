@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         'main-slide-1': "url('/main_slide1.jpg')",
         'main-slide-2': "url('/main_slide2.jpg')",
+        'grmk-mini': "url('/intro/grmk_mini.jpg')",
+        'grmk-place': "url('/intro/grmk_place.jpg')",
+        'grmk-kitchen': "url('/intro/grmk_kitchen.jpg')",
       },
       screens: {
         '3xl': '1600px',
