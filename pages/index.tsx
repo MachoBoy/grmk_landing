@@ -11,6 +11,7 @@ import Partners from '../components/partners/partners';
 import Comments from '../components/comments/comments';
 import KitchenImages from '../components/kitchenImages/kitchenImages';
 import PlaceImages from '../components/placeImages/placeImages';
+import InstagramEmbed from 'react-instagram-embed';
 
 const Main: NextPage = () => {
   return (
@@ -27,6 +28,19 @@ const Main: NextPage = () => {
             <Home />
           </Section>
           <section id='Intro'>
+            <InstagramEmbed
+              url='https://www.instagram.com/p/CdFUPT4J5Ve/'
+              clientAccessToken='428643548794858|IGQVJVZAEZA5X3RfUVhDRTBQR1ZAhVjJKd20tQS04b0NnYVNNZAm9udFBHUmswQzVib0llQmJkY21RZAmhGZAFV4cVFWQ2hRSWx0ZAkp3WlJWVzh5VHZAEUGxseXc3eVBKcnFhdlZANSjRsQ3l4Wm8yUFJQaC1HOQZDZD'
+              maxWidth={320}
+              hideCaption={false}
+              containerTagName='div'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
             <Intro />
             <Store />
           </section>
