@@ -11,7 +11,8 @@ import Partners from '../components/partners/partners';
 import Comments from '../components/comments/comments';
 import KitchenImages from '../components/kitchenImages/kitchenImages';
 import PlaceImages from '../components/placeImages/placeImages';
-import InstagramEmbed from 'react-instagram-embed';
+import KitchenInsta from '../components/insta/kitchenInsta';
+import MiniInsta from '../components/insta/miniInsta';
 
 const Main: NextPage = () => {
   return (
@@ -28,19 +29,6 @@ const Main: NextPage = () => {
             <Home />
           </Section>
           <section id='Intro'>
-            <InstagramEmbed
-              url='https://www.instagram.com/p/CdFUPT4J5Ve/'
-              clientAccessToken='428643548794858|IGQVJVZAEZA5X3RfUVhDRTBQR1ZAhVjJKd20tQS04b0NnYVNNZAm9udFBHUmswQzVib0llQmJkY21RZAmhGZAFV4cVFWQ2hRSWx0ZAkp3WlJWVzh5VHZAEUGxseXc3eVBKcnFhdlZANSjRsQ3l4Wm8yUFJQaC1HOQZDZD'
-              maxWidth={320}
-              hideCaption={false}
-              containerTagName='div'
-              protocol=''
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
             <Intro />
             <Store />
           </section>
@@ -60,9 +48,12 @@ const Main: NextPage = () => {
             <div className='mt-44'>
               <Comments />
             </div>
+            <div className='mt-40'>
+              <MiniInsta />
+            </div>
           </Section>
           <Section id='KITCHEN'>
-            <div>
+            <div className='mt-32'>
               <SectionHeader
                 title='고래마켓 키친'
                 desc='30년 이상의 경력을 가진 셰프들과 치열하게연구하고<br/>개발하여 직접 유통하는 최고급 원물의 맛과 즐거움.<br/>보다 맛있게, 보다 합리적으로<br/>찾아 주시는 여러분들을 정성 다해 모시겠습니다.'
@@ -71,13 +62,16 @@ const Main: NextPage = () => {
             <div className='mt-40'>
               <KitchenImages />
             </div>
+            <div className='mt-40'>
+              <KitchenInsta />
+            </div>
           </Section>
-          <Section id='PLACE'>
+          <Section id='PLACE' className='mt-40'>
             <SectionHeader
               title='고래마켓 플레이스'
               desc='저울치기 등의 편법이 없는<br/>정직하고 깨끗하며 과학적인<br/>신개념 수산시장을 만들어 가고 있습니다.<br/>정량, 정찰제로 수산물 장보기를 경험해 보세요.'
             />
-            <div>
+            <div className='mt-40'>
               <PlaceImages />
             </div>
           </Section>
