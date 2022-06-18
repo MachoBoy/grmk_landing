@@ -24,8 +24,8 @@ const Main: NextPage = () => {
       </Head>
       <ScrollingProvider>
         <Header />
-        <div className='w-full max-w-[1920px] min-h-screen mx-auto'>
-          <Section id='HOME' className='min-h-screen'>
+        <div className='w-full max-w-[1920px] mx-auto'>
+          <Section id='HOME'>
             <Home />
           </Section>
           <section id='Intro'>
