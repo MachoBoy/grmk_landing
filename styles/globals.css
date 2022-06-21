@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .store_container .store_btn {
-  @apply cursor-pointer flex-1 h-full bg-center transition-[flex] duration-500 ease-in-out hover:flex-[23_23_0%] px-[110px] py-[205px];
+  @apply relative cursor-pointer flex-1 h-full bg-center transition-[flex] duration-500 ease-in-out hover:flex-[23_23_0%] px-[110px] py-[205px];
 }
 
 /*호버를 하지 아닌 버튼*/
@@ -11,7 +11,24 @@
   @apply p-0;
 }
 .store_container:hover .store_btn:not(:hover) .store_detail_container {
-  @apply hidden;
+  @apply left-80 opacity-0 invisible;
 }
 
 /*호버를 하는 버튼*/
+.store_container:hover .store_btn:hover .store_detail_container {
+  @apply transition-opacity duration-500 delay-100 relative opacity-100 visible w-full;
+}
+
+.store_container:hover
+  .store_btn:hover
+  .store_detail_container
+  .store_detail_left {
+  @apply w-[526px];
+}
+
+.store_container:hover
+  .store_btn:hover
+  .store_detail_container
+  .store_detail_right {
+  @apply transition-opacity duration-500 delay-100 visible opacity-100 w-full pl-28 border-l-4 border-white;
+}

@@ -6,7 +6,7 @@ interface StoreData {
 
 const StoreDetail = ({ title, desc, text }: StoreData) => {
   return (
-    <div className='store_detail_container w-full h-full border-solid border-[1px] border-white box-border flex justify-center items-center px-12 py-20'>
+    <div className='store_detail_container absolute inset-0 m-auto w-[420px] h-[670px] border-solid border-[1px] border-white box-border flex justify-center items-center px-12 py-20'>
       <div className='store_detail_left w-full h-full flex flex-col items-start justify-start box-border'>
         <h3 className='font-NanumSquare text-[50px] text-white'>고래마켓</h3>
         <h3 className='font-NanumSquare text-[50px] text-white leading-6'>
@@ -18,9 +18,8 @@ const StoreDetail = ({ title, desc, text }: StoreData) => {
           dangerouslySetInnerHTML={{ __html: desc }}
         ></p>
       </div>
-      <div className='store_detail_right'>
-        <span className='divider w-1 h-full bg-white hidden'></span>
-        <div className='hidden'>
+      <div className='store_detail_right relative w-0 h-[550px] invisible opacity-0 flex flex-row justify-start items-center'>
+        <div className='font-NanumSquare text-3xl text-white leading-loose'>
           <p dangerouslySetInnerHTML={{ __html: text }}></p>
         </div>
       </div>
