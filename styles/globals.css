@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.store_container .store_btn {
+  @apply cursor-pointer flex-1 h-full bg-center transition-[flex] duration-500 ease-in-out hover:flex-[23_23_0%] px-[110px] py-[205px];
+}
+
+/*호버를 하지 아닌 버튼*/
+.store_container:hover .store_btn:not(:hover) {
+  @apply p-0;
+}
+.store_container:hover .store_btn:not(:hover) .store_detail_container {
+  @apply hidden;
+}
+
+/*호버를 하는 버튼*/
